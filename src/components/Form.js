@@ -35,7 +35,8 @@ class Form extends Component {
         */
        console.log('This is onFormSubmit', this.state.URL)
        const newLink={linkName: this.state.linkName, URL: this.state.URL}
-       this.props.handleSubmit(newLink)
+       this.props.onNewTask(newLink);
+       this.handleChange(event);
 
     }
 
